@@ -8,7 +8,7 @@ body{
 .page_one{
 	width: 100%;
 	height: 1080px;
-	background-color: black;
+	background-image: url(img/1_page.png);
 }
 
 
@@ -1377,8 +1377,17 @@ body{
 
 	color: #FFFFFF;
 }
-.workers_text_2::first-line{
-	color: red;
+.workers_text_2{
+	
+
+}
+
+.workers_text_2:after{
+	position: absolute;
+	width: 127px;
+	height: 7px;
+	background: #E22121;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
 
 }
 .workers_team{
