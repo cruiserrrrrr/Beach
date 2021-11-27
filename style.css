@@ -1015,6 +1015,11 @@ body{
 	-webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
+.frame_6_3_3:hover{
+	-webkit-filter: none; 
+    filter: none;
+    transition: 1s;
+}
 /*----------------------FRAME 6----------------------------*/
 /*----------------------FRAME 7----------------------------*/
 .frame_7{
@@ -1516,8 +1521,19 @@ body{
 .workers_team_2_5{
 
 }
+.workers_team_2_5_1_0{
+	text-align: center;
+
+	margin-left: 40px;
+	height: 235px;
+	width: 235px;
+	background: #EB542E;
+	border-radius: 50%;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
 .workers_team_2_5_1{
-	margin: 0px 0px 0px 40px;
+	margin-top: 117px;
+
 	font-family: Arial;
 	font-style: normal;
 	font-weight: normal;
@@ -1525,11 +1541,17 @@ body{
 	line-height: 116%;
 
 	color: #FFFFFF;
+	text-decoration: none;
 
-	padding: 99px 108px;
-	background: #EB542E;
+	/*background: #EB542E;
 	border-radius: 50%;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);*/
+}
+.workers_team_2_5_1:hover{
+	padding: 64px 44px;
+	
+	background: #EB542E;
+	box-shadow: 0px 6.08511px 12.1702px rgba(0, 0, 0, 0.04), 0px 1.21702px 3.65106px rgba(0, 0, 0, 0.04), 0px 0px 0.608511px rgba(0, 0, 0, 0.04);
 }
 .workers_team_2_5_2{
 	margin-left: 45px;
@@ -1543,6 +1565,9 @@ body{
 
 	color: #EB542E;
 
+}
+.workers_team_2_5_2:hover{
+	margin-top: 74px;
 }
 /*-----------------------WORKERS----------------------------*/
 /*-----------------------FOOTER----------------------------*/
