@@ -3,6 +3,7 @@
 	<meta charset="utf-8">
 	<title>Beach Studio</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="" href="scripts/git.js">
 	<style type="text/css">
 		
 	</style>
@@ -31,8 +32,8 @@
 					<a class="header_btn" href="#">About us</a>
 					<a class="header_btn" href="#">Hiring</a>
 				</div>
-				<div class="btn_git">
-					<div class=btn>
+				<div class="btn_git" id="btn_git">
+					<div class="btn" >
 						<a class="git" href="#">Get in touch</a>
 					</div>
 				</div>	
@@ -215,7 +216,7 @@
 						<p class="frame_6_2_2_1">We’re a fully remote team of more than 30 professionals working with clients from Australia to California.</p>
 					</div>
 					<div class="frame_6_2_3">
-						<a class="frame_6_2_3_1" href="#">Join our team</a>
+						<a class="frame_6_2_3_1" id="join__our__team" href="#">Join our team</a>
 					</div>
 				</div>
 				<div class="frame_6_3">
@@ -245,35 +246,7 @@
 				</div>
 			</div>
 
-		<!-- <div class="frame_8">
-				<div class="frame_8_1">
-					<p class="frame_8_1_1_1">We write about</p><p class="frame_8_1_1_2">design,</p><p class="frame_8_1_1_3">memes,</p><p class="frame_8_1_1_4">work, communication</p>
-				</div>
-				<div class="frame_8_2">
-					<div class="frame_8_2_1">
-						
-					</div>
-					<div class="frame_8_2_2">
-						
-					</div>
-				</div>
-				<div class="frame_8_3">
-					<div class="frame_8_3_1">
-						
-					</div>
-					<div class="frame_8_3_2">
-						
-					</div>
-				</div>
-				<div class="frame_8_4">
-					<div class="frame_8_4_1">
-						
-					</div>
-					<div class="frame_8_4_2">
-						
-					</div>
-				</div>
-			</div> -->
+		
 
 		</div>
 	</div>
@@ -361,7 +334,9 @@
 							<p class="workers_team_2_4_1">20+ people</p>
 						</div>
 						<div class="workers_team_2_5">
-							<div class="workers_team_2_5_1_0"><a href="#" class="workers_team_2_5_1">+</a></div>
+							<div class="workers_team_2_5_1_0">
+								<a href="#" class="workers_team_2_5_1">+</a>
+							</div>
 							<p class="workers_team_2_5_2">Become part of us</p>
 						</div>
 					</div>
@@ -402,9 +377,491 @@
 		</div>
 		
 	</div>
+
+
+
+
+
+
+
+	<div class="ggit_popup" id="ggit_popup">
+	  <div class="popup__container">
+	    <div class="popup__wrapper">
+	      <div id="git_popup" i>
+	      	<div class="popup__btn_close_wrapper"> 
+		    	<button class="close__popup" id="close__popup"></button>
+		    </div>
+	        <form class="form" role="form" action="/requestFine" autocomplete="off" method="POST">
+	        	<h1 class="from__heading">Get in touch</h1>
+	        	<p class="form__description">We make websites, mobile applications, logos and corporate styles. Launch startups with ☼</p>
+	        	<p class="form__description__hiden"> To get started, we need to talk. If you have some free time, fill out a «useful» form.
+				</p>
+					<ul class="tabs">
+						<div class="form__switch">
+							<a class="left__switch nav_selected" onclick="tab(1);" id="nav0" href="#useful">useful</a>
+							<a class="right__switch nav" onclick="tab(2);" id="nav1" href="#easy">easy</a>
+						</div>
+						
+					</ul>
+					<div class="tabs-content form">
+					<ul>
+
+						<div id="tab1">
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Company name" type="text" name="companyname">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="A little about the project" type="text" name="project">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Phone or messenger*" type="text" name="phone">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Name" type="text" name="name">
+							</div>
+						</div>
+
+
+						<div id="tab2">
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+							</div>
+							
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Name" type="text" name="name">
+							</div>
+						</div>
+					</ul>
+					</div>
+		          	
+			    <button type="submit" class="form__btn">Send request</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="join__popup" id="join__popup">
+	  <div class="join__container">
+	    <div class="join__popup__wrapper">
+	      <div id="join__popup__content" >
+	      	<div class="popup__btn_close_wrapper__join"> 
+		    	<button class="close__popup__join" id="close__popup__join"></button>
+		    </div>
+	        <form class="form__join" role="form" action="/requestFine" autocomplete="off" method="POST">
+	        	<h1 class="from__heading" >Join our team</h1>
+	        	<!-- <h1 class="from__heading">Get in touch</h1>
+	        	<p class="form__description">We make websites, mobile applications, logos and corporate styles. Launch startups with ☼</p>
+	        	<p class="form__description__hiden"> To get started, we need to talk. If you have some free time, fill out a «useful» form.
+				</p>
+					<ul class="tabs">
+						<div class="form__switch">
+							<a class="left__switch nav_selected" onclick="tab(1);" id="nav0" href="#useful">useful</a>
+							<a class="right__switch nav" onclick="tab(2);" id="nav1" href="#easy">easy</a>
+						</div>
+						
+					</ul> -->
+					<div class="tabs-content form">
+					<ul>
+
+						<div id="tab1">
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Your name*" type="text" name="companyname">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Your skills*" type="text" name="project">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="A few words about you*" type="text" name="email">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="E-mail*" type="text" name="phone">
+							</div>
+							<div class="form__groop">
+				          		<input class="form_input" placeholder="Phone or messenger*" type="text" name="name">
+							</div>
+						</div>
+					
+					</ul>
+					</div>
+		          	
+			    <button type="submit" class="form__btn">Send request</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- GET IN TOUCH -->
+
+	<!-- <div class="ggit_popup" id="ggit_popup">
+	  <div class="popup__container">
+	    <div class="popup__wrapper">
+	      <div id="git_popup" i>
+	      	<div class="popup__btn_close_wrapper"> 
+		    	<button class="close__popup" id="close__popup"></button>
+		    </div>
+	        <form class="form" role="form" action="/requestFine" autocomplete="off" method="POST">
+	        	<h1 class="from__heading">Get in touch</h1>
+	        	<p class="form__description">We make websites, mobile applications, logos and corporate styles. Launch startups with ☼</p>
+	        	<p class="form__description__hiden"> To get started, we need to talk. If you have some free time, fill out a «useful» form.
+				</p>
+				<div class="form__switch">
+					<div class="form__left__switch">
+						<button class="left__switch">useful</button>
+					</div>
+					<div class="form__right__switch">
+						<button class="right__switch">easy</button>	
+					</div>
+					
+				</div>
+
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Company name" type="text" name="companyname">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="A little about the project" type="text" name="project">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Phone or messenger*" type="text" name="phone">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Name" type="text" name="name">
+				</div>
+		          	
+			    <button type="submit" class="form__btn">Send request</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
+
+	<!-- <div class="git__popup__easy" id="git__popup__easy">
+	  <div class="popup__container">
+	    <div class="popup__wrapper">
+	      <div id="git_popup" i>
+	      	<div class="popup__btn_close_wrapper"> 
+		    	<button class="close__popup" id="close__popup"></button>
+		    </div>
+	        <form class="form" role="form" action="/requestFine" autocomplete="off" method="POST">
+	        	<h1 class="from__heading">Get in touch</h1>
+	        	<p class="form__description">We make websites, mobile applications, logos and corporate styles. Launch startups with ☼</p>
+	        	<p class="form__description__hiden"> To get started, we need to talk. If you have some free time, fill out a «useful» form.
+				</p>
+				<div class="form__switch">
+					<div class="form__left__switch">
+						<button class="left__switch" id="left__switch">useful</button>
+					</div>
+					<div class="form__right__switch" id="form__right__switch">
+						<button class="right__switch" id="right__switch">easy</button>	
+					</div>
+					
+				</div>
+						
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+				</div>
+				
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Name" type="text" name="name">
+				</div>
+		          	
+			    <button type="submit" class="form__btn">Send request</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
+
+		<!-- <ul class="tabs">
+			<div class="form__switch"><a class="left__switch" href="#useful">useful</a>
+				<a class="right__switch" href="#easy">easy</a>
+			</div>
+			
+		</ul>
+		<div class="tabs-content form">
+		<ul>
+
+			<div id="useful">
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Company name" type="text" name="companyname">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="A little about the project" type="text" name="project">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Phone or messenger*" type="text" name="phone">
+				</div>
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Name" type="text" name="name">
+				</div>
+			</div>
+
+
+			<div id="easy">
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="E-mail*" type="text" name="email">
+				</div>
+				
+				<div class="form__groop">
+	          		<input class="form_input" placeholder="Name" type="text" name="name">
+				</div>
+			</div>
+		</ul>
+		</div> -->
+
+
+
 	
 
 
+
+
+	<!-- <div class="nav-tabs">
+		<a href="#" data-tab="1" class="nav-tab active">useful</a>
+		<a href="#" data-tab="2" class="nav-tab">easy</a>
+	</div>
+	<div class="tab-content">
+	  	<div data-tab-content="1" class="tab-pane active">
+	    	<div class="form__groop">
+	          		<input class="form_input" placeholder="Company name" type="text" name="companyname">
+			</div>
+
+			<div class="form__groop">
+	          	<input class="form_input" placeholder="A little about the project" type="text" name="project">
+			</div>
+
+			<div class="form__groop">
+	          	<input class="form_input" placeholder="E-mail*" type="text" name="email">
+			</div>
+
+			<div class="form__groop">
+	          	<input class="form_input" placeholder="Phone or messenger*" type="text" name="phone">
+			</div>
+
+			<div class="form__groop">
+	          	<input class="form_input" placeholder="Name" type="text" name="name">
+			</div>
+		</div>
+
+		<div data-tab-content="2" class="tab-pane">
+		    <div class="form__groop">
+	          	<input class="form_input" placeholder="E-mail*" type="text" name="email">
+			</div>
+				
+			<div class="form__groop">
+	          	<input class="form_input" placeholder="Name" type="text" name="name">
+			</div>
+		</div>
+	</div> -->
+
+
+
+
+	<!-- <div class="ggit_popup" id="ggit_popup">
+	  <div class="popup__container">
+	    <div class="popup__wrapper">
+	      <div id="git_popup" i>
+	      	<div class="popup__btn_close_wrapper"> 
+		    	<button class="close__popup" id="close__popup"></button>
+		    </div>
+	        <form class="form" role="form" action="/requestFine" autocomplete="off" method="POST">
+	        	<h1 class="from__heading">Get in touch</h1>
+	        	<p class="form__description">We make websites, mobile applications, logos and corporate styles. Launch startups with ☼</p>
+	        	<p class="form__description__hiden"> To get started, we need to talk. If you have some free time, fill out a «useful» form.
+				</p>
+				<div class="nav-tabs form__switch">
+				<a href="#" data-tab="1" class="left__switch active">useful</a>
+				<a href="#" data-tab="2" class="right__switch">easy</a>
+				</div>
+				<div class="tab-content">
+				  	<div data-tab-content="1" class="tab-pane active">
+				    	<div class="form__groop">
+				          		<input class="form_input" placeholder="Company name" type="text" name="companyname">
+						</div>
+
+						<div class="form__groop">
+				          	<input class="form_input" placeholder="A little about the project" type="text" name="project">
+						</div>
+
+						<div class="form__groop">
+				          	<input class="form_input" placeholder="E-mail*" type="text" name="email">
+						</div>
+
+						<div class="form__groop">
+				          	<input class="form_input" placeholder="Phone or messenger*" type="text" name="phone">
+						</div>
+
+						<div class="form__groop">
+				          	<input class="form_input" placeholder="Name" type="text" name="name">
+						</div>
+					</div>
+
+					<div data-tab-content="2" class="tab-pane">
+					    <div class="form__groop">
+				          	<input class="form_input" placeholder="E-mail*" type="text" name="email">
+						</div>
+							
+						<div class="form__groop">
+				          	<input class="form_input" placeholder="Name" type="text" name="name">
+						</div>
+					</div>
+				</div>
+				
+
+				
+		          	
+			    <button type="submit" class="form__btn">Send request</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
+
+
+
+<!-- Scripts -->
+<script src="scripts/git.js"></script>
+<script src="scripts/tabs.js"></script>
+<!-- <script src="scripts/easy__popup.js"></script> -->
+<!-- Scripts -->
 
 
 </body>
